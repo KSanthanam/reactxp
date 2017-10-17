@@ -16,9 +16,13 @@ export abstract class ImageSvg extends React.Component<Types.ImageSvgProps, any>
 export abstract class SvgPath extends React.Component<Types.SvgPathProps, any> {
 }
 
+export abstract class SvgCircle extends React.Component<Types.SvgCircleProps, any> {
+}
+
 export interface PluginInterface {
     Types: typeof Types;
     
     default: typeof ImageSvg;
     SvgPath: typeof SvgPath;
+    SvgCircle: typeof SvgCircle;
 }
