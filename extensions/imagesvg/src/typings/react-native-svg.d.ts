@@ -52,6 +52,12 @@ declare module 'react-native-svg' {
         d: string
     }
 
+    interface CircleProps extends BaseProps {
+        cx?: number;
+        cy?: number;
+        r: number;
+    }
+    
     interface RectProps extends BaseProps {
         width?: number,
         height?: number
@@ -65,6 +71,7 @@ declare module 'react-native-svg' {
 
     export class Svg extends React.Component<SvgProps, {}> { }
     export class Path extends React.Component<PathProps, {}> { }
+    export class Circle extends React.Component<CircleProps, {}> { }
     export class Rect extends React.Component<RectProps, {}> { }
     export class Text extends React.Component<TextProps, {}> { }
 }
